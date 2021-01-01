@@ -1,6 +1,6 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import { Container, Header, Left, Title, Body, Button, Icon, Right} from 'native-base';
+import { SafeAreaView, StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-native';
+import { Container, Header, } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { AuthStackParamList, AppScreens } from '../../navigation/AuthFlowNavigator';
@@ -60,20 +60,11 @@ const profileIcon = require('../../assets/images/profile.png');
 const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
     const { navigation } = props;
 return (
-        <Container>
-          <Header>
-            <Left>
-              <Button
-              transparent
-              onPress={() => props.navigation.navigate('SideBar')}>
-              <Icon name='menu'/>
-              </Button>
-            </Left>
-            <Body>
-              <Title>CRM Modules</Title>
-            </Body>
-            <Right />
-          </Header>
+        <SafeAreaView style={styles.container}>
+          <Container>
+            <Header>
+              <Text style={styles.bold}>CRM Modules</Text>
+            </Header>
               <View style={styles.buttons}>
               <Grid>
                 <Row>
@@ -190,12 +181,11 @@ return (
                 </Row>
               </Grid>
             </View>
-            <Button full  primary
-            style={{}}
-            onPress={() => navigation.navigate(AppScreens.Welcome)}>
-            <Text>Logout</Text>
-            </Button>
           </Container>
+          <View style={styles.btnNextContainer}>
+                <Button title="Logout" onPress={() => navigation.navigate(AppScreens.Welcome)} />
+          </View>
+        </SafeAreaView>
     );
 };
 export default ModulesScreen;

@@ -41,9 +41,6 @@ const styles = StyleSheet.create({
     },
     btnContainer: {
         backgroundColor: '#f1f1e6',
-        borderRadius: 5,
-        padding: 5,
-
     }
 });
 const LoginScreen: React.FunctionComponent<LoginScreenProps> = (props) => {
@@ -68,7 +65,7 @@ return (
                 <Button title="Signup" onPress={() => navigation.navigate(AppScreens.Signup)} />
             </View> */}
             <View style={styles.btnContainer}>
-                <Button title="Modules" onPress={() => navigation.navigate(AppScreens.Modules, { username })} />
+                <Button title="Go to Modules" onPress={() => navigation.navigate(AppScreens.Modules, { username })} />
             </View>
         </SafeAreaView>
     );

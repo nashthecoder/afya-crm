@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, TextInput, Button, View, Image } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TextInput, View, Image } from 'react-native';
+import { Button } from 'native-base';
 import { AppScreens, AuthStackParamList } from '../../navigation/AuthFlowNavigator';
 import { StackNavigationProp } from '@react-navigation/stack';
 // import Reports from './ReportsScreen';
@@ -38,12 +39,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         marginTop: 100,
-    },
-    btnContainer: {
-        backgroundColor: '#f1f1e6',
-        borderRadius: 5,
-        padding: 5,
-
     }
 });
 const LoginScreen: React.FunctionComponent<LoginScreenProps> = (props) => {
@@ -68,7 +63,7 @@ return (
                 <Button title="Signup" onPress={() => navigation.navigate(AppScreens.Signup)} />
             </View> */}
             <View style={styles.btnContainer}>
-                <Button title="Modules" onPress={() => navigation.navigate(AppScreens.Modules, { username })} />
+                <Button title="Go to Modules" onPress={() => navigation.navigate(AppScreens.Modules, { username })} />
             </View>
         </SafeAreaView>
     );

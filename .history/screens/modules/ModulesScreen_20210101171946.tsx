@@ -57,8 +57,10 @@ const faqIcon = require('../../assets/images/faq.png');
 const loginIcon = require('../../assets/images/login.png');
 const profileIcon = require('../../assets/images/profile.png');
 
-const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
-    const { navigation } = props;
+// const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
+//     const { navigation } = props;
+export default class HomeScreen extends React.Component {
+  render() {
 return (
         <Container>
           <Header>

@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     btnContainer: {
         backgroundColor: '#f1f1e6',
         borderRadius: 5,
-        padding: 5,
+        padding: 10,
 
     }
 });

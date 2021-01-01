@@ -33,17 +33,6 @@ const styles = StyleSheet.create({
     },
     txtHello: {
         fontSize: 30
-    },
-    header: {
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginTop: 100,
-    },
-    btnContainer: {
-        backgroundColor: '#f1f1e6',
-        borderRadius: 5,
-        padding: 5,
-
     }
 });
 const LoginScreen: React.FunctionComponent<LoginScreenProps> = (props) => {
@@ -51,9 +40,9 @@ const LoginScreen: React.FunctionComponent<LoginScreenProps> = (props) => {
     const [username, setUsername] = useState<string>('');
 return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
+            <View style={styles.login}>
                 <Image source = {require('../../assets/images/afya_logo.png')} />  
-                <Text style={styles.txtHello}>Sign in</Text> 
+                <Text style={styles.txtHello}>Hello { name } Sign in</Text> 
             </View>
             <View style={styles.textInputContainer}>
                 <TextInput
@@ -68,7 +57,7 @@ return (
                 <Button title="Signup" onPress={() => navigation.navigate(AppScreens.Signup)} />
             </View> */}
             <View style={styles.btnContainer}>
-                <Button title="Modules" onPress={() => navigation.navigate(AppScreens.Modules, { username })} />
+                <Button title="Go to Modules" onPress={() => navigation.navigate(AppScreens.Modules, { username })} />
             </View>
         </SafeAreaView>
     );

@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         borderWidth: 1,
         borderColor: 'grey',
-        marginTop: 4,
+        marginTop: 0,
         padding: 2,
         width: '100%',
         height: 50,
@@ -37,13 +37,7 @@ const styles = StyleSheet.create({
     header: {
         alignItems: 'center',
         justifyContent: 'space-between',
-        marginTop: 100,
-    },
-    btnContainer: {
-        backgroundColor: '#f1f1e6',
-        borderRadius: 5,
-        padding: 5,
-
+        marginTop: 60,
     }
 });
 const LoginScreen: React.FunctionComponent<LoginScreenProps> = (props) => {
@@ -68,7 +62,7 @@ return (
                 <Button title="Signup" onPress={() => navigation.navigate(AppScreens.Signup)} />
             </View> */}
             <View style={styles.btnContainer}>
-                <Button title="Modules" onPress={() => navigation.navigate(AppScreens.Modules, { username })} />
+                <Button title="Go to Modules" onPress={() => navigation.navigate(AppScreens.Modules, { username })} />
             </View>
         </SafeAreaView>
     );

@@ -60,20 +60,21 @@ const profileIcon = require('../../assets/images/profile.png');
 const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
     const { navigation } = props;
 return (
-        <Container>
-          <Header>
-            <Left>
-              <Button
-              transparent
-              onPress={() => props.navigation.navigate('SideBar')}>
-              <Icon name='menu'/>
-              </Button>
-            </Left>
+          <Container>
+            <Header>
+              <Left>
+                <Button
+                transparent
+                onPress={() => this.props.navigation.navigate("DrawerOpen")}>
+                <Icon name='menu'/>
+                </Button>
+              </Left>
+            
             <Body>
               <Title>CRM Modules</Title>
             </Body>
             <Right />
-          </Header>
+            </Header>
               <View style={styles.buttons}>
               <Grid>
                 <Row>

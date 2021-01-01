@@ -65,7 +65,7 @@ return (
             <Left>
               <Button
               transparent
-              onPress={() => props.navigation.navigate('SideBar')}>
+              onPress={() => this.props.navigation.navigate('SideBar')}>
               <Icon name='menu'/>
               </Button>
             </Left>
