@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
     menuButton: {
       marginLeft: 18,
       marginTop: 5,
+      color: "red",
     }
   });
   

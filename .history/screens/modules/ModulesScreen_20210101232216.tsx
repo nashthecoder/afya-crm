@@ -57,8 +57,7 @@ const styles = StyleSheet.create({
       alignSelf: "center",
     },
     menuButton: {
-      marginLeft: 18,
-      marginTop: 5,
+      marginLeft: 10,
     }
   });
   

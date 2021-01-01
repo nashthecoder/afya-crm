@@ -55,10 +55,6 @@ const styles = StyleSheet.create({
       marginTop: 20,
       width: "40%",
       alignSelf: "center",
-    },
-    menuButton: {
-      marginLeft: 18,
-      marginTop: 5,
     }
   });
   
@@ -75,7 +71,7 @@ const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
       <Container>
         <Header>
           <Left>
-            <View style={styles.menuButton}>
+            <View style={styles.icons}>
               <Icon name='menu'/>
             </View>
           </Left>
