@@ -52,9 +52,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#f1f1e6',
       borderRadius: 5,
       padding: 5,
-      marginTop: 20,
-      width: "40%",
-      alignSelf: "center",
+      width: "40%"
     }
   });
   

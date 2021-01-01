@@ -5,9 +5,9 @@ import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import ModulesScreen from '../screens/Modules/ModulesScreen';
+import ReportsScreen from '../screens/Reports/ReportsScreen';
 import MessagesScreen from '../screens/MessagesScreen';
-import { BottomTabParamList, ModulesParamList, MessagesParamList } from '../types';
+import { BottomTabParamList, ReportsParamList, MessagesParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -16,10 +16,10 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="Modules"
+      initialRouteName="Reports"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
       <BottomTab.Screen
-        name="Modules"
+        name="Reports"
         component={ReportsNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="md-document" color={color} />,
@@ -44,17 +44,17 @@ function TabBarIcon(props: { name: string; color: string }) {
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
-const ModulesStack = createStackNavigator<ModulesParamList>();
+const ReportsStack = createStackNavigator<ReportsParamList>();
 
-function ModulesNavigator() {
+function ReportsNavigator() {
   return (
-    <ModulesStack.Navigator>
-      <ModulesStack.Screen
-        name="ModulesScreen"
-        component={ModulesScreen}
-        options={{ headerTitle: 'Modules' }}
+    <ReportsStack.Navigator>
+      <ReportsStack.Screen
+        name="ReportsScreen"
+        component={ReportsScreen}
+        options={{ headerTitle: 'Reports' }}
       />
-    </ModulesStack.Navigator>
+    </ReportsStack.Navigator>
   );
 }
 

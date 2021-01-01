@@ -1,6 +1,6 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View, Image, Button, TouchableOpacity } from 'react-native';
-import { Container, Header, Left, Title, Body, Icon, Right} from 'native-base';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { Container, Header, Left, Title, Body, Alert, Button, Icon, Right} from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { AuthStackParamList, AppScreens } from '../../navigation/AuthFlowNavigator';
@@ -47,14 +47,6 @@ const styles = StyleSheet.create({
       paddingTop: 15,
       marginLeft: 10,
       marginRight: 10,
-    },
-    btnContainer: {
-      backgroundColor: '#f1f1e6',
-      borderRadius: 5,
-      padding: 5,
-      marginTop: 20,
-      width: "40%",
-      alignSelf: "center",
     }
   });
   
@@ -65,24 +57,39 @@ const faqIcon = require('../../assets/images/faq.png');
 const loginIcon = require('../../assets/images/login.png');
 const profileIcon = require('../../assets/images/profile.png');
 
+const addModuleAlert = () => 
+  Alert.alert(
+    "To add a module",
+    "Login as admin",
+    [
+      {
+        text: "Cancel",
+        onPress: () => console.log("Cancel Pressed"),
+        style: "cancel"
+      },
+      { text: "OK", onPress: () => console.log("OK Pressed")}
+    ],
+    {cancelable: false}
+  );
+
 const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
     const { navigation } = props;
       return (
-      <Container>
-        <Header>
-          <Left>
-            {/* <Button
-            style="transparent"
-            onPress={() => props.navigation.navigate('SideBar')}> */}
-            <Icon name='menu'/>
-            {/* </Button> */}
-          </Left>
-          <Body>
-            <Title>CRM Modules</Title>
-          </Body>
-          <Right />
-        </Header>
-          <View style={styles.buttons}> 
+        <Container>
+          <Header>
+            <Left>
+              <Button
+              transparent
+              onPress={() => props.navigation.navigate('SideBar')}>
+              <Icon name='menu'/>
+              </Button>
+            </Left>
+            <Body>
+              <Title>CRM Modules</Title>
+            </Body>
+            <Right />
+          </Header>
+            <View style={styles.buttons}>
             <Grid>
               <Row>
                 <Col>
@@ -156,7 +163,7 @@ const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
                 </Col>
                 <Col>
                   <TouchableOpacity
-                  onPress={() => props.navigation.navigate('NotFound')}
+                  onPress={() => props.navigation.navigate('AddModule')}
                   style={styles.item}
                   >
                     <Image
@@ -197,10 +204,11 @@ const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
                 </Col>
               </Row>
             </Grid>
-            <View style={styles.btnContainer}>
-                <Button title="Logout" onPress={() => navigation.navigate(AppScreens.Welcome)} />
-            </View>
           </View>
+          <Button full  primary
+          onPress={() => navigation.navigate(AppScreens.Welcome)}>
+          <Text>Logout</Text>
+          </Button>
       </Container>
   );
 };

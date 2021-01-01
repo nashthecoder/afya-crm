@@ -52,9 +52,6 @@ const styles = StyleSheet.create({
       backgroundColor: '#f1f1e6',
       borderRadius: 5,
       padding: 5,
-      marginTop: 20,
-      width: "40%",
-      alignSelf: "center",
     }
   });
   
@@ -71,11 +68,11 @@ const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
       <Container>
         <Header>
           <Left>
-            {/* <Button
+            <Button
             style="transparent"
-            onPress={() => props.navigation.navigate('SideBar')}> */}
+            onPress={() => props.navigation.navigate('SideBar')}>
             <Icon name='menu'/>
-            {/* </Button> */}
+            </Button>
           </Left>
           <Body>
             <Title>CRM Modules</Title>

@@ -5,7 +5,7 @@ import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import ModulesScreen from '../screens/Modules/ModulesScreen';
+import ModulesScreen from '../screens/Reports/ModulesScreen';
 import MessagesScreen from '../screens/MessagesScreen';
 import { BottomTabParamList, ModulesParamList, MessagesParamList } from '../types';
 
@@ -16,7 +16,7 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="Modules"
+      initialRouteName="Reports"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
       <BottomTab.Screen
         name="Modules"

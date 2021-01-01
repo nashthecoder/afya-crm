@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View, Image, Button, TouchableOpacity } from 'react-native';
-import { Container, Header, Left, Title, Body, Icon, Right} from 'native-base';
+import { Container, Header, Left, Title, Body, Button, Icon, Right} from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { AuthStackParamList, AppScreens } from '../../navigation/AuthFlowNavigator';
@@ -52,9 +52,6 @@ const styles = StyleSheet.create({
       backgroundColor: '#f1f1e6',
       borderRadius: 5,
       padding: 5,
-      marginTop: 20,
-      width: "40%",
-      alignSelf: "center",
     }
   });
   
@@ -71,11 +68,11 @@ const ModulesScreen: React.FunctionComponent<ModulesScreenProps> = (props) => {
       <Container>
         <Header>
           <Left>
-            {/* <Button
-            style="transparent"
-            onPress={() => props.navigation.navigate('SideBar')}> */}
+            <Button
+            transparent
+            onPress={() => props.navigation.navigate('SideBar')}>
             <Icon name='menu'/>
-            {/* </Button> */}
+            </Button>
           </Left>
           <Body>
             <Title>CRM Modules</Title>
