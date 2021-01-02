@@ -1,2 +1,0 @@
-# afya-crm
-Afya-crm
