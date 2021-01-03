@@ -1,15 +1,20 @@
 import React from "react";
-import { View, Button, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Button, Text, StyleSheet, ScrollView, Paragraph } from "react-native";
 
-const ReportFinancial = ({ navigation }) => {
+const ReportAttachments = ({ navigation }) => {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
-          
-          <Button
+          <Text>Upload attachments</Text>
+            <Paragraph>
+            Thank you for your report submission
+You will get an email with a copy of the completed report
+            </Paragraph>
+
+          {/* <Button
             title="Upload Attachments"
             onPress={() => navigation.navigate("ReportAttachments")}
-          />
+          /> */}
         </ScrollView>
     </View>
       
@@ -30,4 +35,4 @@ const ReportFinancial = ({ navigation }) => {
     },
 });
 
-export default ReportFinancial;
+export default ReportAttachments;

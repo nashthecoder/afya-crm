@@ -5,10 +5,10 @@ const ReportNarrative = ({ navigation }) => {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
-          
+          <Text style={styles.text}>CRM</Text>
           <Button
-            title="Financial Report"
-            onPress={() => navigation.navigate("ReportFinancial")}
+            title="Login"
+            onPress={() => navigation.navigate("Login")}
           />
         </ScrollView>
     </View>

@@ -1,15 +1,15 @@
 import React from "react";
 import { View, Button, Text, StyleSheet, ScrollView } from "react-native";
 
-const ReportNarrative = ({ navigation }) => {
+const Profile = ({ navigation }) => {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
-          
-          <Button
-            title="Financial Report"
-            onPress={() => navigation.navigate("ReportFinancial")}
-          />
+         <Text>Organisation Profile</Text> 
+          {/* <Button
+            title="Update Profile"
+            onPress={() => navigation.navigate("ReportAttachments")}
+          /> */}
         </ScrollView>
     </View>
       
@@ -30,4 +30,4 @@ const ReportNarrative = ({ navigation }) => {
     },
 });
 
-export default ReportNarrative;
+export default Profile;

@@ -7,7 +7,7 @@ const ReportNarrative = ({ navigation }) => {
         <ScrollView style={styles.scrollView}>
           
           <Button
-            title="Financial Report"
+            title="Next"
             onPress={() => navigation.navigate("ReportFinancial")}
           />
         </ScrollView>

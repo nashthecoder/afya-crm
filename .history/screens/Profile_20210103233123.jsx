@@ -35,3 +35,13 @@ const styles = StyleSheet.create({
 });
 
 export default Profile;
+
+
+Fill in user details
+Insert Organisation Name
+Insert Project Name
+Insert Project Code
+Insert Region
+Insert City
+Insert Grant Amount
+Insert Grant Period

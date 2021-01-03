@@ -1,16 +1,14 @@
 import React from "react";
-import { View, Button, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Button, Text, StyleSheet } from "react-native";
 
 const ReportNarrative = ({ navigation }) => {
     return (
       <View style={styles.container}>
-        <ScrollView style={styles.scrollView}>
-          
-          <Button
-            title="Financial Report"
-            onPress={() => navigation.navigate("ReportFinancial")}
-          />
-        </ScrollView>
+        <Text style={styles.text}>CRM</Text>
+        <Button
+          title="Login"
+          onPress={() => navigation.navigate("Login")}
+        />
     </View>
       
     );
