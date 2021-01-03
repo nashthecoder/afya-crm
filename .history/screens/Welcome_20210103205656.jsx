@@ -4,12 +4,14 @@ import { View, Button, StyleSheet, Text, Image } from "react-native";
 const Welcome = ({ navigation }) => {
   return (
     <View style={styles.container}>
+      
       <Image source = {require('../assets/images/afya_logo.png')} /> 
       <Text style={styles.text}>CRM</Text>
       <Button
         title="Login"
         onPress={() => navigation.navigate("Login")}
       />
+    
   </View>
     
   );

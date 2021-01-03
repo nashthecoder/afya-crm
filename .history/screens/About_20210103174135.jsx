@@ -1,16 +1,16 @@
 import React from "react";
-import { View, Button, StyleSheet, Text, TextInput, Image } from "react-native";
+import { View, StyleSheet, Text, Image } from "react-native";
 
-
-
-const About = ({ navigation }) => {
+const About = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Image source = {require('../assets/images/afya_logo.png')} />  
-        <Text style={styles.txtHello}>About</Text> 
-      </View>
-       
+
+
+    </View>>
+
+    
+    <View style={styles.center}>
+      <Text style={styles.text}>About Page</Text>
     </View>
   );
 };
@@ -24,6 +24,13 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderRadius: 5
 },
+  center: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    backgroundColor: "white",
+  },
   text: {
     fontWeight: "800",
   }

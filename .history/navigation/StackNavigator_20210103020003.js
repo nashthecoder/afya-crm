@@ -5,6 +5,7 @@ import Home from "../screens/Home";
 import Welcome from "../screens/Welcome";
 import Messages from "../screens/Messages";
 import Login from "../screens/Login";
+import Signin from '../screens/Signin';
 import Reports from '../screens/Reports';
 import Calendar from '../screens/Calendar';
 import AddModule from '../screens/AddModule';
@@ -28,6 +29,7 @@ const MainStackNavigator = () => {
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="Welcome" component={Welcome} />
       <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Signin" component={Signin} />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Reports" component={Reports} />
       <Stack.Screen name="Calendar" component={Calendar} />

@@ -7,7 +7,6 @@ import TabNavigator from "./TabNavigator";
 import Profile from "../screens/Profile";
 import About from "../screens/About";
 import Faq from "../screens/Faq";
-import Login from "../screens/Login";
 
 const Drawer = createDrawerNavigator();
 

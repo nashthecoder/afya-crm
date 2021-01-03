@@ -1,14 +1,10 @@
 import React from "react";
-import { View, Button, StyleSheet, Text, Image } from "react-native";
+import { View, StyleSheet, Text, Image } from "react-native";
 
-const Signin = ({ navigation }) => {
+const About = () => {
   return (
     <View style={styles.center}>
-      <Text style={styles.text}>Signin Page</Text>
-      <Button
-        title="Signin"
-        onPress={() => navigation.navigate("Signin")}
-      />
+      <Text style={styles.text}>About Page</Text>
     </View>
   );
 };
@@ -27,4 +23,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Signin;
+export default About;

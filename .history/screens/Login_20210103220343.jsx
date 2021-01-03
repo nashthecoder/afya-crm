@@ -4,6 +4,10 @@ import { View, Button, StyleSheet, Text, TextInput, Image, TouchableOpacity } fr
 
 
 const Login = ({ navigation }) => {
+  const state ={
+    email:"",
+    password:""
+  }
   return (
     <View style={styles.container}>
       <View style={styles.logo}>
@@ -22,7 +26,7 @@ const Login = ({ navigation }) => {
             style={styles.inputText}
             placeholder="Password..." 
             placeholderTextColor="#254176"
-          />
+            onChangeText={text => this.setState({password:text})}/>
         </View>
         <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
           <Text style={styles.forgot}>Forgot Password?</Text>

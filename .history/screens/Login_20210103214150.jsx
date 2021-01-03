@@ -4,6 +4,10 @@ import { View, Button, StyleSheet, Text, TextInput, Image, TouchableOpacity } fr
 
 
 const Login = ({ navigation }) => {
+  const state={
+    email:"",
+    password:""
+  }
   return (
     <View style={styles.container}>
       <View style={styles.logo}>
@@ -14,7 +18,7 @@ const Login = ({ navigation }) => {
             style={styles.inputText}
             placeholder="Email..." 
             placeholderTextColor="#254176"
-          />
+            onChangeText={text => this.setState({email:text})}/>
         </View>
         <View style={styles.inputView} >
           <TextInput  
@@ -22,7 +26,7 @@ const Login = ({ navigation }) => {
             style={styles.inputText}
             placeholder="Password..." 
             placeholderTextColor="#254176"
-          />
+            onChangeText={text => this.setState({password:text})}/>
         </View>
         <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
           <Text style={styles.forgot}>Forgot Password?</Text>
@@ -32,7 +36,7 @@ const Login = ({ navigation }) => {
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
-          <Text style={styles.signupText}>Signup</Text>
+          <Text style={styles.loginText}>Signup</Text>
         </TouchableOpacity>
     </View>
   );
@@ -65,9 +69,7 @@ const styles = StyleSheet.create({
   },
   forgot:{
     color:"#254176",
-    fontSize:12,
-    fontWeight: "600",
-    marginTop: -25,
+    fontSize:11
   },
   loginBtn:{
     width:"80%",
@@ -76,18 +78,12 @@ const styles = StyleSheet.create({
     height:50,
     alignItems:"center",
     justifyContent:"center",
-    marginTop:-55,
+    marginTop:-5,
     marginBottom:10
   },
   loginText:{
     color:"#254176",
-    marginBottom:10,
-    fontWeight: "800",
-  },
-  signupText:{
-    color:"#254176",
-    marginBottom: 60,
-    fontWeight: "800",
+    marginBottom: 10,
   }
 });
 

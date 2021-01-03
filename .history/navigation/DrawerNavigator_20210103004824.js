@@ -7,7 +7,7 @@ import TabNavigator from "./TabNavigator";
 import Profile from "../screens/Profile";
 import About from "../screens/About";
 import Faq from "../screens/Faq";
-import Login from "../screens/Login";
+import Signin from "../screens/Signin";
 
 const Drawer = createDrawerNavigator();
 
@@ -18,7 +18,7 @@ const DrawerNavigator = () => {
       <Drawer.Screen name="Profile" component={Profile} />
       <Drawer.Screen name="About" component={About} />
       <Drawer.Screen name="FAQ" component={Faq} />
-      <Drawer.Screen name="Logout" component={Login} /> 
+      <Drawer.Screen name="Logout" component={Signin} /> 
     </Drawer.Navigator>
   );
 };
