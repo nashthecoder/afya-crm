@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontWeight: "800",
-    marginBottom: 300,
+    marginBottom: 90,
   },
   logo: {
     marginTop: 200,

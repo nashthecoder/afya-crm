@@ -1,15 +1,23 @@
 import React from "react";
 import { View, Button, StyleSheet, Text, Image } from "react-native";
+import { Title } from "native-base";
+import { ScrollView } from "react-native-gesture-handler";
 
 const Welcome = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Image style={styles.logo} source = {require('../assets/images/afya_logo.png')} /> 
-      <Text style={styles.text}>CRM</Text>
-      <Button
+      <ScrollView style={styles.scrollView}>
+        <Title>Add User Profile</Title>
+        <Button
+          title="Add Profile"
+          onPress={() => navigation.navigate("ReportFinancial")}
+        />
+      </ScrollView>
+      
+      {/* <Button
         title="Login"
         onPress={() => navigation.navigate("Login")}
-      />
+      /> */}
   </View>
     
   );
@@ -20,17 +28,13 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-between',
-    margin: 10,
+    marginTop: 80,
     backgroundColor: "white",
     borderRadius: 5,
   },
   text: {
     fontWeight: "800",
-    marginBottom: 300,
-  },
-  logo: {
-    marginTop: 200,
-  },
+  }
 
 });
 

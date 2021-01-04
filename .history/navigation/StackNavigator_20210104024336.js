@@ -4,15 +4,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../screens/Home";
 import Welcome from "../screens/Welcome";
 import Messages from "../screens/Messages";
-import DraftMessage from "../screens/DraftMessage";
 import Login from "../screens/Login";
 import Reports from '../screens/Reports';
 import Calendar from '../screens/Calendar';
 import AddModule from '../screens/AddModule';
-import ReportAttachments from '../screens/ReportAttachments';
-import ReportFinancial from '../screens/ReportFinancial';
-import ReportNarrative from '../screens/ReportNarrative';
-
 
 
 const Stack = createStackNavigator();
@@ -32,12 +27,8 @@ const MainStackNavigator = () => {
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Reports" component={Reports} />
-      <Stack.Screen name="DraftMessage" component={DraftMessage} />
       <Stack.Screen name="Calendar" component={Calendar} />
       <Stack.Screen name="AddModule" component={AddModule} />
-      <Stack.Screen name="ReportAttachments" component={ReportAttachments} />
-      <Stack.Screen name="ReportFinancial" component={ReportFinancial} />
-      <Stack.Screen name="ReportNarrative" component={ReportNarrative} />
     </Stack.Navigator>
   );
 };

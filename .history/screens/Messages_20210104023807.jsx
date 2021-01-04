@@ -5,10 +5,11 @@ import DatePicker from "../component/DatePicker"
 const Messages = ({ navigation }) => {
   return (
     <View style={styles.center}>
-      <Button
-        title="Open preferred message application"
-        onPress={() => navigation.navigate("DraftMessage")}
-      />
+      <Text>This is the messages screen</Text>
+      {/* <Button
+        title="Review Reports"
+        onPress={() => navigation.navigate("MessageNew")}
+      /> */}
     </View>
   );
 };

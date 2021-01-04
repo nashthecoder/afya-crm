@@ -5,6 +5,7 @@ import DatePicker from "../component/DatePicker"
 const Messages = ({ navigation }) => {
   return (
     <View style={styles.center}>
+      <Text>This is the messages screen</Text>
       <Button
         title="Open preferred message application"
         onPress={() => navigation.navigate("DraftMessage")}

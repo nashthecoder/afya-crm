@@ -4,7 +4,6 @@ import { View, Button, StyleSheet, Text, Image } from "react-native";
 const Welcome = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Image style={styles.logo} source = {require('../assets/images/afya_logo.png')} /> 
       <Text style={styles.text}>CRM</Text>
       <Button
         title="Login"
@@ -26,11 +25,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontWeight: "800",
-    marginBottom: 300,
-  },
-  logo: {
-    marginTop: 200,
-  },
+  }
 
 });
 

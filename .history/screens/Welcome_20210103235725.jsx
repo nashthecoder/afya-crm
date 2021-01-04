@@ -26,11 +26,10 @@ const styles = StyleSheet.create({
   },
   text: {
     fontWeight: "800",
-    marginBottom: 300,
   },
   logo: {
-    marginTop: 200,
-  },
+    marginTop: 50,
+  }
 
 });
 

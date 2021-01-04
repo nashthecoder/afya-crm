@@ -7,6 +7,7 @@ const Welcome = ({ navigation }) => {
       <Image style={styles.logo} source = {require('../assets/images/afya_logo.png')} /> 
       <Text style={styles.text}>CRM</Text>
       <Button
+        style={styles.button}
         title="Login"
         onPress={() => navigation.navigate("Login")}
       />
@@ -26,11 +27,14 @@ const styles = StyleSheet.create({
   },
   text: {
     fontWeight: "800",
-    marginBottom: 300,
+    marginBottom: 50,
   },
   logo: {
     marginTop: 200,
   },
+  button: {
+    marginTop: -10,
+  }
 
 });
 

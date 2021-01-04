@@ -1,14 +1,12 @@
 import React from "react";
-import { View, StyleSheet, Text, Button } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import DatePicker from "../component/DatePicker"
 
-const Messages = ({ navigation }) => {
+const Messages = () => {
   return (
     <View style={styles.center}>
-      <Button
-        title="Open preferred message application"
-        onPress={() => navigation.navigate("DraftMessage")}
-      />
+      <Text>This is the messages screen</Text>
+        <DatePicker />
     </View>
   );
 };
