@@ -7,10 +7,7 @@ const About = ({ navigation }) => {
   return (
     <View style={styles.container}>
     <ScrollView style={styles.scrollView}>
-        <Text style={styles.textFaq}>
-        About the Application: 
-        </Text>
-        <Text style={styles.textFaq}>
+        <Te style={styles.textFaq}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. In fermentum posuere urna nec tincidunt 
         praesent. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Ullamcorper 
@@ -66,8 +63,8 @@ const styles = StyleSheet.create({
   textFaq: {
     fontWeight: "400",
     marginTop: 25,
-    marginLeft: 15,
-    marginRight: 15,
+    marginLeft: 10,
+    marginRight: 10,
   }
 
 });

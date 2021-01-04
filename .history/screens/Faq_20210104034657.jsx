@@ -82,30 +82,6 @@ const Faq = ({ navigation }) => {
                     sed do.</Text>
                 </Body>
               </CardItem>
-              <CardItem bordered>
-                <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
-                </Body>
-              </CardItem>
-              <CardItem bordered>
-                <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
-                </Body>
-              </CardItem>
-              <CardItem bordered>
-                <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
-                </Body>
-              </CardItem>
             </Card>
           </Content>
       </Container>

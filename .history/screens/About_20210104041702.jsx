@@ -66,8 +66,8 @@ const styles = StyleSheet.create({
   textFaq: {
     fontWeight: "400",
     marginTop: 25,
-    marginLeft: 15,
-    marginRight: 15,
+    marginLeft: 10,
+    marginRight: 10,
   }
 
 });

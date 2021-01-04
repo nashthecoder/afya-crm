@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text,  ScrollView, Title } from "react-native";
+import { View, StyleSheet, Text,  ScrollView } from "react-native";
 
 
 
@@ -8,9 +8,6 @@ const About = ({ navigation }) => {
     <View style={styles.container}>
     <ScrollView style={styles.scrollView}>
         <Text style={styles.textFaq}>
-        About the Application: 
-        </Text>
-        <Text style={styles.textFaq}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. In fermentum posuere urna nec tincidunt 
         praesent. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Ullamcorper 
@@ -21,7 +18,11 @@ const About = ({ navigation }) => {
         Facilisi cras fermentum odio eu feugiat. Feugiat nibh sed pulvinar proin gravida. 
         Lorem ipsum dolor sit amet consectetur adipiscing. Metus vulputate eu scelerisque 
         felis imperdiet. A erat nam at lectus. Scelerisque eu ultrices vitae auctor eu augue ut 
-        lectus. Mollis aliquam ut porttitor leo a diam sollicitudin. 
+        lectus. Mollis aliquam ut porttitor leo a diam sollicitudin. Vel fringilla est ullamcorper 
+        eget nulla facilisi etiam. Et netus et malesuada fames ac. Risus viverra adipiscing at in tellus. 
+        Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Pulvinar sapien et 
+        ligula ullamcorper malesuada proin libero nunc consequat. Scelerisque in dictum non 
+        consectetur a erat nam at. Faucibus a pellentesque sit amet porttitor eget dolor morbi non.
         </Text> 
         <Text style={styles.textFaq}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -34,7 +35,11 @@ const About = ({ navigation }) => {
         Facilisi cras fermentum odio eu feugiat. Feugiat nibh sed pulvinar proin gravida. 
         Lorem ipsum dolor sit amet consectetur adipiscing. Metus vulputate eu scelerisque 
         felis imperdiet. A erat nam at lectus. Scelerisque eu ultrices vitae auctor eu augue ut 
-        lectus. Mollis aliquam ut porttitor leo a diam sollicitudin. 
+        lectus. Mollis aliquam ut porttitor leo a diam sollicitudin. Vel fringilla est ullamcorper 
+        eget nulla facilisi etiam. Et netus et malesuada fames ac. Risus viverra adipiscing at in tellus. 
+        Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Pulvinar sapien et 
+        ligula ullamcorper malesuada proin libero nunc consequat. Scelerisque in dictum non 
+        consectetur a erat nam at. Faucibus a pellentesque sit amet porttitor eget dolor morbi non.
         </Text> 
         <Text style={styles.textFaq}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -47,7 +52,11 @@ const About = ({ navigation }) => {
         Facilisi cras fermentum odio eu feugiat. Feugiat nibh sed pulvinar proin gravida. 
         Lorem ipsum dolor sit amet consectetur adipiscing. Metus vulputate eu scelerisque 
         felis imperdiet. A erat nam at lectus. Scelerisque eu ultrices vitae auctor eu augue ut 
-        lectus. Mollis aliquam ut porttitor leo a diam sollicitudin. 
+        lectus. Mollis aliquam ut porttitor leo a diam sollicitudin. Vel fringilla est ullamcorper 
+        eget nulla facilisi etiam. Et netus et malesuada fames ac. Risus viverra adipiscing at in tellus. 
+        Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Pulvinar sapien et 
+        ligula ullamcorper malesuada proin libero nunc consequat. Scelerisque in dictum non 
+        consectetur a erat nam at. Faucibus a pellentesque sit amet porttitor eget dolor morbi non.
         </Text> 
       </ScrollView>
     </View>
@@ -65,9 +74,9 @@ const styles = StyleSheet.create({
 },
   textFaq: {
     fontWeight: "400",
-    marginTop: 25,
-    marginLeft: 15,
-    marginRight: 15,
+    marginTop: 10,
+    marginLeft: 10,
+    marginRight: 10,
   }
 
 });

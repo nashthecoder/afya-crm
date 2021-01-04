@@ -61,19 +61,19 @@ const Modules = ({ navigation }) => {
                 <Text style={styles.buttonText}>Calendar</Text>
               </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
+            <TouchableOpacity onPress={() => navigation.navigate("AddModule")}>
               <View style={styles.button}>
                 <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
         </Row>  
         <Row>
-            <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
+            <TouchableOpacity onPress={() => navigation.navigate("AddModule")}>
               <View style={styles.button}>
                 <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
+            <TouchableOpacity onPress={() => navigation.navigate("AddModule")}>
               <View style={styles.button}>
                 <Text style={styles.buttonText}>Module +</Text>
               </View>

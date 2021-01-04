@@ -40,7 +40,7 @@ const Faq = ({ navigation }) => {
           <Content padder>
             <Card>
             <CardItem style={styles.title} header bordered>
-              <Title>CRM FAQ</Title>
+              <Title>FAQ</Title>
             </CardItem>
               <CardItem bordered button>
                 <Body>
@@ -56,30 +56,6 @@ const Faq = ({ navigation }) => {
                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do.</Text>
-                </Body>
-              </CardItem>
-              <CardItem bordered>
-                <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
-                </Body>
-              </CardItem>
-              <CardItem bordered>
-                <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
-                </Body>
-              </CardItem>
-              <CardItem bordered>
-                <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
                 </Body>
               </CardItem>
               <CardItem bordered>
