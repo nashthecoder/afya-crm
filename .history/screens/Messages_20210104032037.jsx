@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text, Button } from "react-native";
-import { Header, Title, Body, Content } from "native-base";
+import { Header, Title } from "native-base";
 import DatePicker from "../component/DatePicker";
 
 const Messages = ({ navigation }) => {

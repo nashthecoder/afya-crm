@@ -34,16 +34,16 @@ const Faq = ({ navigation }) => {
     <View style={styles.container}>
       <Container>
         <Header>
-          <Text style={styles.bold}>Afya Inc: Lorem ipsum dolor sit amet, adipiscing elit, 
-            sed do eiusmod tempor incididunt.</Text>
+          <Text style={styles.bold}>FAQ's</Text>
         </Header>
           <Content padder>
             <Card>
             <CardItem style={styles.title} header bordered>
-              <Title>FAQ</Title>
+              <Title>Report Overview</Title>
             </CardItem>
               <CardItem bordered button>
                 <Body>
+                  <Title>Narrative Report </Title>
                     <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -52,6 +52,7 @@ const Faq = ({ navigation }) => {
               </CardItem>
               <CardItem bordered>
                 <Body>
+                  <Title>Financial Report </Title>
                     <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -60,22 +61,7 @@ const Faq = ({ navigation }) => {
               </CardItem>
               <CardItem bordered>
                 <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
-                </Body>
-              </CardItem>
-              <CardItem bordered>
-                <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
-                </Body>
-              </CardItem>
-              <CardItem bordered>
-                <Body>
+                  <Title>Attachments</Title> 
                   <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,

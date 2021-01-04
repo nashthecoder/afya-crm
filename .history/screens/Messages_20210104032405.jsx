@@ -9,6 +9,13 @@ const Messages = ({ navigation }) => {
     <Header>
       <Title>Inbox</Title>
     </Header>
+    <View>
+      <Body>
+        <Content>
+          <Text>Messages</Text>
+        </Content>
+      </Body>
+    </View>
       <Button
         title="Open preferred message application"
         onPress={() => navigation.navigate("DraftMessage")}

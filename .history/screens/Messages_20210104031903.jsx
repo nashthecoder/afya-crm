@@ -1,13 +1,12 @@
 import React from "react";
-import { View, StyleSheet, Text, Button } from "react-native";
-import { Header, Title, Body, Content } from "native-base";
-import DatePicker from "../component/DatePicker";
+import { View, StyleSheet, Text, Button, Header } from "react-native";
+import DatePicker from "../component/DatePicker"
 
 const Messages = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.center}>
     <Header>
-      <Title>Inbox</Title>
+      <Text>Inbox</Text>
     </Header>
       <Button
         title="Open preferred message application"

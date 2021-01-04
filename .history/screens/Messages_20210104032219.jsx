@@ -1,6 +1,6 @@
 import React from "react";
-import { View, StyleSheet, Text, Button } from "react-native";
-import { Header, Title, Body, Content } from "native-base";
+import { View, StyleSheet, Text, Button, Content } from "react-native";
+import { Header, Title, Body } from "native-base";
 import DatePicker from "../component/DatePicker";
 
 const Messages = ({ navigation }) => {
@@ -9,6 +9,11 @@ const Messages = ({ navigation }) => {
     <Header>
       <Title>Inbox</Title>
     </Header>
+    <Body>
+      <Content>
+      <Text>Messages</Text>
+      </Content>
+    </Body>
       <Button
         title="Open preferred message application"
         onPress={() => navigation.navigate("DraftMessage")}

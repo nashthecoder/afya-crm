@@ -34,7 +34,7 @@ const Faq = ({ navigation }) => {
     <View style={styles.container}>
       <Container>
         <Header>
-          <Text style={styles.bold}>Afya Inc: Lorem ipsum dolor sit amet, adipiscing elit, 
+          <Text style={styles.bold}>Instructions: Lorem ipsum dolor sit amet, adipiscing elit, 
             sed do eiusmod tempor incididunt.</Text>
         </Header>
           <Content padder>
@@ -64,22 +64,7 @@ const Faq = ({ navigation }) => {
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do.</Text>
-                </Body>
-              </CardItem>
-              <CardItem bordered>
-                <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
-                </Body>
-              </CardItem>
-              <CardItem bordered>
-                <Body>
-                  <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do.</Text>
+
                 </Body>
               </CardItem>
             </Card>
