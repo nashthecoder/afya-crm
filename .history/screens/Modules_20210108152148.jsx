@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Button, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { Col, Row, Grid } from "react-native-easy-grid";
-import { Container, Header, Left, Title, Body, Icon, Right }from "native-base";
+import { Container, Header, Left, Title, Body, Right }from "native-base";
 
 const styles = StyleSheet.create({
   button: {
@@ -46,13 +46,12 @@ const Modules = ({ navigation }) => {
         <Row>
             <TouchableOpacity onPress={() => navigation.navigate("Reports")}>
               <View style={styles.button}>
-              <Icon name="folder" size={30}/>
+              <Image source = {require('../assets/icons/document-attach-outline.svg')} /> 
                 <Text style={styles.buttonText}>Reports</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate("Messages")}>
               <View style={styles.button}>
-              <Icon name="folder" size={30}/>
                 <Text style={styles.buttonText}>Messages</Text>
               </View>
             </TouchableOpacity>
@@ -60,13 +59,11 @@ const Modules = ({ navigation }) => {
         <Row>
             <TouchableOpacity onPress={() => navigation.navigate("Calendar")}>
               <View style={styles.button}>
-              <Icon name="folder" size={30}/>
                 <Text style={styles.buttonText}>Calendar</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="folder" size={30}/>
                 <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
@@ -74,13 +71,11 @@ const Modules = ({ navigation }) => {
         <Row>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="folder" size={30}/>
                 <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="folder" size={30}/>
                 <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>

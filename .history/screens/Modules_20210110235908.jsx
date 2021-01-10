@@ -80,7 +80,6 @@ const Modules = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="folder" size={30}/>
                 <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
