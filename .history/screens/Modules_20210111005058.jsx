@@ -52,7 +52,7 @@ const Modules = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate("Messages")}>
               <View style={styles.button}>
-              <Icon name="mail" style={styles.icon} size={30}/>
+              <Icon name="email" style={styles.icon} size={30}/>
                 <Text style={styles.buttonText}>Messages</Text>
               </View>
             </TouchableOpacity>
@@ -67,7 +67,7 @@ const Modules = ({ navigation }) => {
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
               <Icon name="add" style={styles.icon}  size={30}/>
-                <Text style={styles.buttonText}>Module</Text>
+                <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
         </Row>  
@@ -75,13 +75,13 @@ const Modules = ({ navigation }) => {
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
               <Icon name="add" style={styles.icon} size={30}/>
-                <Text style={styles.buttonText}>Module</Text>
+                <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
               <Icon name="add" style={styles.icon} size={30}/>
-                <Text style={styles.buttonText}>Module</Text>
+                <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
         </Row>   

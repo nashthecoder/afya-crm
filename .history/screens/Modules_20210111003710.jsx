@@ -1,6 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import { Row, Grid } from "react-native-easy-grid";
+import { View, Button, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { Col, Row, Grid } from "react-native-easy-grid";
 import { Container, Header, Left, Title, Body, Icon, Right }from "native-base";
 
 const styles = StyleSheet.create({
@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     marginTop: 10,
     marginBottom: 30,
-    marginLeft: 17,
-    marginRight: -2,
+    marginLeft: 15,
+    marginRight: -5,
     width: "100%",
     height: "75%",
     alignItems: 'center',
@@ -52,7 +52,7 @@ const Modules = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate("Messages")}>
               <View style={styles.button}>
-              <Icon name="mail" style={styles.icon} size={30}/>
+              <Icon name="email" style={styles.icon} size={30}/>
                 <Text style={styles.buttonText}>Messages</Text>
               </View>
             </TouchableOpacity>
@@ -66,22 +66,22 @@ const Modules = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="add" style={styles.icon}  size={30}/>
-                <Text style={styles.buttonText}>Module</Text>
+              <Icon name="plus" style={styles.icon}  size={30}/>
+                <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
         </Row>  
         <Row>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="add" style={styles.icon} size={30}/>
-                <Text style={styles.buttonText}>Module</Text>
+              <Icon name="folder" style={styles.icon} size={30}/>
+                <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="add" style={styles.icon} size={30}/>
-                <Text style={styles.buttonText}>Module</Text>
+              <Icon name="folder" style={styles.icon} size={30}/>
+                <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
         </Row>   

@@ -1,6 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import { Row, Grid } from "react-native-easy-grid";
+import { View, Button, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { Col, Row, Grid } from "react-native-easy-grid";
 import { Container, Header, Left, Title, Body, Icon, Right }from "native-base";
 
 const styles = StyleSheet.create({
@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     marginTop: 10,
     marginBottom: 30,
-    marginLeft: 17,
-    marginRight: -2,
+    marginLeft: 15,
+    marginRight: -1,
     width: "100%",
     height: "75%",
     alignItems: 'center',
@@ -25,11 +25,14 @@ const styles = StyleSheet.create({
     fontWeight: '800',
   },
   icon: {
-    marginTop: 15,
-    marginBottom: -20,
+    marginTop: 5,
   }
 
 });
+
+const reportsIcon = require('../assets/images/reports.png');
+const messagesIcon = require('../assets/images/messages.png');
+const calendarIcon = require('../assets/images/calendar.png');
 
 const Modules = ({ navigation }) => {
   return (
@@ -46,13 +49,13 @@ const Modules = ({ navigation }) => {
         <Row>
             <TouchableOpacity onPress={() => navigation.navigate("Reports")}>
               <View style={styles.button}>
-              <Icon name="folder" style={styles.icon}  size={30}/>
+              <Icon name="folder" size={30}/>
                 <Text style={styles.buttonText}>Reports</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate("Messages")}>
               <View style={styles.button}>
-              <Icon name="mail" style={styles.icon} size={30}/>
+              <Icon name="folder" size={30}/>
                 <Text style={styles.buttonText}>Messages</Text>
               </View>
             </TouchableOpacity>
@@ -60,28 +63,28 @@ const Modules = ({ navigation }) => {
         <Row>
             <TouchableOpacity onPress={() => navigation.navigate("Calendar")}>
               <View style={styles.button}>
-              <Icon name="calendar" style={styles.icon}  size={30}/>
+              <Icon name="folder" size={30}/>
                 <Text style={styles.buttonText}>Calendar</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="add" style={styles.icon}  size={30}/>
-                <Text style={styles.buttonText}>Module</Text>
+              <Icon name="folder" size={30}/>
+                <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
         </Row>  
         <Row>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="add" style={styles.icon} size={30}/>
-                <Text style={styles.buttonText}>Module</Text>
+              <Icon name="folder" size={30}/>
+                <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => alert("Send request to Tech Support")}>
               <View style={styles.button}>
-              <Icon name="add" style={styles.icon} size={30}/>
-                <Text style={styles.buttonText}>Module</Text>
+              <Icon name="folder" style={styles.icon} size={30}/>
+                <Text style={styles.buttonText}>Module +</Text>
               </View>
             </TouchableOpacity>
         </Row>   

@@ -52,7 +52,7 @@ const Modules = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate("Messages")}>
               <View style={styles.button}>
-              <Icon name="mail" style={styles.icon} size={30}/>
+              <Icon name="e-mail" style={styles.icon} size={30}/>
                 <Text style={styles.buttonText}>Messages</Text>
               </View>
             </TouchableOpacity>
