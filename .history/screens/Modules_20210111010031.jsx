@@ -36,11 +36,12 @@ const styles = StyleSheet.create({
     marginTop: 15,
     marginBottom: -20,
   }
+
 });
 
 const Modules = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <View>
       <Container>
       <Header>
         <Left />

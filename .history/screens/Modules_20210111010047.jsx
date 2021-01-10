@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     marginTop: 15,
     marginBottom: -20,
   }
+
 });
 
 const Modules = ({ navigation }) => {

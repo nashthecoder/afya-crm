@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     marginTop: 10,
     marginBottom: 30,
-    marginLeft: '5%',
+    marginLeft: '5=1%',
     marginRight: '1%',
     width: "100%",
     height: "75%",

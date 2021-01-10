@@ -4,14 +4,6 @@ import { Row, Grid } from "react-native-easy-grid";
 import { Container, Header, Left, Title, Body, Icon, Right }from "native-base";
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    margin: 10,
-    backgroundColor: "white",
-    borderRadius: 5,
-  },
   button: {
     paddingTop: 20,
     marginTop: 10,
@@ -36,12 +28,12 @@ const styles = StyleSheet.create({
     marginTop: 15,
     marginBottom: -20,
   }
+
 });
 
 const Modules = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <Container>
+    <Container>
       <Header>
         <Left />
         <Body>
@@ -95,8 +87,7 @@ const Modules = ({ navigation }) => {
         </Row>   
         </View> 
       </Grid>
-      </Container>
-    </View>
+    </Container>
   );
 };
 export default Modules;

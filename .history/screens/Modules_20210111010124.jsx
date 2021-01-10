@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 const Modules = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Container>
+      
       <Header>
         <Left />
         <Body>
@@ -95,7 +95,7 @@ const Modules = ({ navigation }) => {
         </Row>   
         </View> 
       </Grid>
-      </Container>
+
     </View>
   );
 };
