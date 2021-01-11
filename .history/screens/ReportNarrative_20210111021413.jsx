@@ -78,10 +78,6 @@ const ReportNarrative = ({ navigation }) => {
                 </Body>
               </CardItem>
             </Card>
-            <Button
-            title="Next"
-            onPress={() => navigation.navigate("ReportFinancial")}
-          />
           </Content>
       </Container>
     </View>
@@ -102,7 +98,7 @@ const ReportNarrative = ({ navigation }) => {
       fontWeight: "800",
     },
     bold: {
-      marginTop: 15,
+      marginTop: 10,
     }
 });
 

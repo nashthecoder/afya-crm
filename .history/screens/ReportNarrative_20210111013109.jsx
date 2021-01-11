@@ -1,0 +1,34 @@
+import React, { useState } from "react";
+import { View, Button, Text, StyleSheet, ScrollView } from "react-native";
+import NativeForms from "native-forms";
+
+const ReportNarrative = ({ navigation }) => {
+    return (
+      <View style={styles.container}>
+        <ScrollView style={styles.scrollView}>
+          
+          <Button
+            title="Next"
+            onPress={() => navigation.navigate("ReportFinancial")}
+          />
+        </ScrollView>
+    </View>
+      
+    );
+  };
+  
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      margin: 10,
+      backgroundColor: "white",
+      borderRadius: 5,
+    },
+    text: {
+      fontWeight: "800",
+    },
+});
+
+export default ReportNarrative;

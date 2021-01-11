@@ -80,7 +80,7 @@ const ReportNarrative = ({ navigation }) => {
             </Card>
             <Button
             title="Next"
-            onPress={() => navigation.navigate("ReportFinancial")}
+            onPress={() => navigation.navigate("ReportFinacials")}
           />
           </Content>
       </Container>

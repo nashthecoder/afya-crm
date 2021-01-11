@@ -3,7 +3,7 @@ import { View, Button, Text, StyleSheet, ScrollView } from "react-native";
 import { Container, Header, Body, Card, CardItem, Content, Title } from 'native-base';
 
 
-const ReportNarrative = ({ navigation }) => {
+const ReportFinancial = ({ navigation }) => {
     return (
       <View style={styles.container}>
       <Container>
@@ -106,4 +106,4 @@ const ReportNarrative = ({ navigation }) => {
     }
 });
 
-export default ReportNarrative;
+export default ReportFinancial;

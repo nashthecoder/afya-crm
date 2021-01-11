@@ -13,6 +13,7 @@ const ReportNarrative = ({ navigation }) => {
         </Header>
           <Content padder>
             <Card>
+
               <CardItem bordered button>
                 <Body>
                     <Text style={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -78,10 +79,6 @@ const ReportNarrative = ({ navigation }) => {
                 </Body>
               </CardItem>
             </Card>
-            <Button
-            title="Next"
-            onPress={() => navigation.navigate("ReportFinancial")}
-          />
           </Content>
       </Container>
     </View>
@@ -101,9 +98,6 @@ const ReportNarrative = ({ navigation }) => {
     text: {
       fontWeight: "800",
     },
-    bold: {
-      marginTop: 15,
-    }
 });
 
 export default ReportNarrative;

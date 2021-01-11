@@ -78,10 +78,6 @@ const ReportNarrative = ({ navigation }) => {
                 </Body>
               </CardItem>
             </Card>
-            <Button
-            title="Next"
-            onPress={() => navigation.navigate("ReportFinancial")}
-          />
           </Content>
       </Container>
     </View>

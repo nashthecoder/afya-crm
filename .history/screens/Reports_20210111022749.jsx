@@ -18,8 +18,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "800",
     backgroundColor: "#b8caff",
-    borderTopEndRadius: 10,
-    borderTopStartRadius: 10,
+    borderRadiusTop: 5,
   },
   paragraph: {
     margin: 5,

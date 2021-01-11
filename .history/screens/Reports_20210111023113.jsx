@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#b8caff",
     borderTopEndRadius: 10,
     borderTopStartRadius: 10,
+    borderBottomEndRadius: 10,
+    borderBottomStartRadius: 10,
   },
   paragraph: {
     margin: 5,
